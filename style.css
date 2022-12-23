@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    width: 100%;
+    height: vh;
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23d5ab);
+    background-size: 500% 500%;
+    animation: animeBG 3s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes animeBG{
+    0%{background-position: 0%;}
+    100%{background-position: 100%;}
+}
+header h1{
+    text-align: center;
+    padding: 30px;
+    font-size: 3rem;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 5px;
+    color: #6E53A5;
+    text-shadow: 3px 3px #fff;
+}
+main{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+section{
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    display: inline-block;
+    width: 70%;
+    margin: 20px;
+    border-radius: 25px;
+    text-align: left;
+    transition: all 0.3s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
+}
+section:hover{
+    
+    box-shadow: 5px 5px 5px #FF3CAC;
+    
+}
+section img{
+    height: 300px;
+    padding: 15px;
+    float: left;
+    border-radius: 20px;
+    transition: all 0.3s;
+    transform: scale(1);
+    
+}
+section img:hover{
+    transform: scale(.9);
+    cursor: pointer;
+}
+section h2{
+    padding: 15px 15px 5px 15px;
+    font-size: 2rem;
+    color:#FC3CAB;
+    text-decoration: underline;
+}
+section p{
+    padding: 15px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: aliceblue;
+    text-shadow: #FF3CAC;
+}
+section button{
+    float: right;
+    margin-right: 15px;
+    padding: 10px 15px;
+    border-radius: 7px;
+    border-style: none;
+    font-weight: 600;
+    color: #fff;
+    background-color: #6758A9;
+    font-size: 1rem;
+    transition: all 0.3s;
+    
+}
+section button:hover{
+    background-color: #E53FAA;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #fff;
+}
