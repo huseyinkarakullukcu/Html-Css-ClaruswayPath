@@ -8,7 +8,7 @@ body{
     height: vh;
     background: linear-gradient(45deg, #ee7752, #e73c7e, #23d5ab);
     background-size: 500% 500%;
-    animation: animeBG 3s linear infinite;
+    animation: animeBG 4s linear infinite;
     animation-direction: alternate;
 }
 @keyframes animeBG{
@@ -28,10 +28,19 @@ main{
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+main h2{
+    text-shadow: 2px 2px 3px #000;
+}
+main h2:hover{
+    transition: all 0.3s;
+    color: #fff;
+    cursor: pointer;
+}
 section{
+    display: inline-block;
+    overflow: auto;
     background-color: #FF3CAC;
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-    display: inline-block;
     width: 70%;
     margin: 20px;
     border-radius: 25px;
@@ -47,7 +56,7 @@ section:hover{
 }
 section img{
     height: 300px;
-    padding: 15px;
+    padding: 20px;
     float: left;
     border-radius: 20px;
     transition: all 0.3s;
@@ -71,9 +80,9 @@ section p{
     color: aliceblue;
     text-shadow: #FF3CAC;
 }
-section button{
+section a{
     float: right;
-    margin-right: 15px;
+    margin: 0px 15px 15px 0px;
     padding: 10px 15px;
     border-radius: 7px;
     border-style: none;
@@ -82,10 +91,16 @@ section button{
     background-color: #6758A9;
     font-size: 1rem;
     transition: all 0.3s;
-    
+    text-decoration: none;
 }
-section button:hover{
+section a:hover{
     background-color: #E53FAA;
     cursor: pointer;
     box-shadow: 3px 3px 3px #fff;
+}
+footer{
+    padding: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    font-weight: 300;
 }
